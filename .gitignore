@@ -1,2 +1,14 @@
-cmake-build-debug/
-.idea/
+.idea
+.DS_Store
+.cmake/
+CMakeFiles/
+Testing/
+*.ninja
+*.cmake
+.ninja_deps
+.ninja_log
+*.txt
+FlightManager
+*.cbp
+*.exe
+Makefile

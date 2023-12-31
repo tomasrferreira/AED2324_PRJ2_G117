@@ -1,42 +1,37 @@
-#ifndef AED2324_PRJ2_G117_AIRLINE_H
-#define AED2324_PRJ2_G117_AIRLINE_H
+#ifndef AIRLINE_H
+#define AIRLINE_H
 
 #include <string>
 
 using namespace std;
 
-class Airline{
-private:
-    string code;
-    string name;
-    string callsign;
-    string country;
+/**
+ * Class that represents the airlines
+ */
+class Airline {
+    string code, name, callSign, country;
 public:
-    Airline(string code);
-    Airline(string code , string name , string callsign , string country);
+    Airline() = default;
 
-    const string &getCode() const;
-    const string &getName() const;
-    const string &getCallsign() const;
-    const string &getCountry() const;
+    Airline(string code, string name, string callSign, string country);
 
-    void setCode(const string &code);
-    void setName(const string &name);
-    void setCallsign(const string &callsign);
-    void setCountry(const string &country);
+    void setCode(string code);
 
-    /**
-     * Checks if this airport has less priority than airport a2 by comparing their code using operator <
-     * @param a2 airport to be compared
-     * @return true if this airport has less priority than airport a2, else false
-     */
-    bool operator<(const Airline& a2) const;
-    /**
-     * Checks if this airport is equal to airport a2 by comparing their code using operator ==
-     * @param a2 airport to be compared
-     * @return true if this airport is equal to airport a2, else false
-     */
-    bool operator== (const Airline& a2) const;
+    string getCode() const;
+
+    void setName(string name);
+
+    string getName() const;
+
+    void setCallSign(string callSign);
+
+    string getCallSign() const;
+
+    void setCountry(string country);
+
+    string getCountry() const;
+
+    bool operator<(const Airline &a1) const;
 };
 
-#endif //AED2324_PRJ2_G117_AIRLINE_H
+#endif
