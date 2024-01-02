@@ -77,7 +77,7 @@ void pickNumFlights() {
  * Main function of the program
  */
 int main() {
-    flightManager.readFiles("airports.csv", "airlines.csv", "flights.csv");
+    flightManager.readFiles("/Users/tomasgrf/Desktop/AED2324_PRJ2_G117/data_csv/airports.csv", "/Users/tomasgrf/Desktop/AED2324_PRJ2_G117/data_csv/airlines.csv", "/Users/tomasgrf/Desktop/AED2324_PRJ2_G117/data_csv/flights.csv");
     short entry = 0, type = 0;
     string src, dest, code, city;
     int numberOfFlights, numberOfAirlines, numberOfCities, numberOfCountries, response;
