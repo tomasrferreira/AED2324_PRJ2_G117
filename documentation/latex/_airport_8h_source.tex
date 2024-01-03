@@ -1,0 +1,75 @@
+\doxysection{Airport.\+h}
+\hypertarget{_airport_8h_source}{}\label{_airport_8h_source}\index{/Users/tomasgrf/Desktop/AED2324\_PRJ2\_G117/src/Airport.h@{/Users/tomasgrf/Desktop/AED2324\_PRJ2\_G117/src/Airport.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ AIRPORT\_H}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ AIRPORT\_H}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ <string>}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ <vector>}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#include\ "{}Flight.h"{}}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#include\ "{}Airline.h"{}}}
+\DoxyCodeLine{00008\ }
+\DoxyCodeLine{00009\ \textcolor{keyword}{using\ namespace\ }std;}
+\DoxyCodeLine{00010\ }
+\DoxyCodeLine{00011\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_flight}{Flight}};}
+\DoxyCodeLine{00012\ }
+\DoxyCodeLine{00016\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_airport}{Airport}}\ \{}
+\DoxyCodeLine{00017\ \ \ \ \ \textcolor{keywordtype}{string}\ code,\ name,\ city,\ country;}
+\DoxyCodeLine{00018\ \ \ \ \ \textcolor{keywordtype}{double}\ latitude\{\},\ longitude\{\},\ distance\{\};}
+\DoxyCodeLine{00019\ \ \ \ \ vector<pair<Airport\ *,\ Airline\ *>>\ scales\{\};}
+\DoxyCodeLine{00020\ \ \ \ \ \textcolor{keywordtype}{bool}\ visited\ =\ \textcolor{keyword}{false};\ \ \ \textcolor{comment}{//\ node\ is\ visited?}}
+\DoxyCodeLine{00021\ \ \ \ \ vector<Flight>\ flights;\ \textcolor{comment}{//\ edges}}
+\DoxyCodeLine{00022\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00023\ }
+\DoxyCodeLine{00024\ \ \ \ \ \mbox{\hyperlink{class_airport}{Airport}}()\ =\ \textcolor{keywordflow}{default};}
+\DoxyCodeLine{00025\ }
+\DoxyCodeLine{00026\ \ \ \ \ \mbox{\hyperlink{class_airport}{Airport}}(\textcolor{keywordtype}{string}\ code,\ \textcolor{keywordtype}{string}\ name,\ \textcolor{keywordtype}{string}\ city,\ \textcolor{keywordtype}{string}\ country,\ \textcolor{keywordtype}{double}\ latitude,\ \textcolor{keywordtype}{double}\ longitude,\ \textcolor{keywordtype}{bool}\ visited);}
+\DoxyCodeLine{00027\ }
+\DoxyCodeLine{00028\ \ \ \ \ \textcolor{keyword}{const}\ \textcolor{keywordtype}{string}\ \&getCode()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00029\ }
+\DoxyCodeLine{00030\ \ \ \ \ \textcolor{keyword}{const}\ \textcolor{keywordtype}{string}\ \&getName()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00031\ }
+\DoxyCodeLine{00032\ \ \ \ \ \textcolor{keyword}{const}\ \textcolor{keywordtype}{string}\ \&getCity()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00033\ }
+\DoxyCodeLine{00034\ \ \ \ \ \textcolor{keyword}{const}\ \textcolor{keywordtype}{string}\ \&getCountry()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00035\ }
+\DoxyCodeLine{00036\ \ \ \ \ \textcolor{keywordtype}{double}\ getLatitude()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00037\ }
+\DoxyCodeLine{00038\ \ \ \ \ \textcolor{keywordtype}{double}\ getLongitude()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00039\ }
+\DoxyCodeLine{00040\ \ \ \ \ vector<Flight>\ getFlights()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00041\ }
+\DoxyCodeLine{00042\ \ \ \ \ \textcolor{keywordtype}{void}\ setCode(\textcolor{keyword}{const}\ \textcolor{keywordtype}{string}\ \&code);}
+\DoxyCodeLine{00043\ }
+\DoxyCodeLine{00044\ \ \ \ \ \textcolor{keywordtype}{void}\ setName(\textcolor{keyword}{const}\ \textcolor{keywordtype}{string}\ \&name);}
+\DoxyCodeLine{00045\ }
+\DoxyCodeLine{00046\ \ \ \ \ \textcolor{keywordtype}{void}\ setCity(\textcolor{keyword}{const}\ \textcolor{keywordtype}{string}\ \&city);}
+\DoxyCodeLine{00047\ }
+\DoxyCodeLine{00048\ \ \ \ \ \textcolor{keywordtype}{void}\ setCountry(\textcolor{keyword}{const}\ \textcolor{keywordtype}{string}\ \&country);}
+\DoxyCodeLine{00049\ }
+\DoxyCodeLine{00050\ \ \ \ \ \textcolor{keywordtype}{void}\ setLatitude(\textcolor{keywordtype}{double}\ latitude);}
+\DoxyCodeLine{00051\ }
+\DoxyCodeLine{00052\ \ \ \ \ \textcolor{keywordtype}{void}\ setLongitude(\textcolor{keywordtype}{double}\ longitude);}
+\DoxyCodeLine{00053\ }
+\DoxyCodeLine{00054\ \ \ \ \ \textcolor{keywordtype}{void}\ addFlight(\mbox{\hyperlink{class_airport}{Airport}}\ *destination,\ \mbox{\hyperlink{class_airline}{Airline}}\ *airline);}
+\DoxyCodeLine{00055\ }
+\DoxyCodeLine{00056\ \ \ \ \ \textcolor{keywordtype}{bool}\ isVisited()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00057\ }
+\DoxyCodeLine{00058\ \ \ \ \ \textcolor{keywordtype}{void}\ setVisited(\textcolor{keywordtype}{bool}\ visited);}
+\DoxyCodeLine{00059\ }
+\DoxyCodeLine{00060\ \ \ \ \ \textcolor{keywordtype}{double}\ getDistance()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00061\ }
+\DoxyCodeLine{00062\ \ \ \ \ \textcolor{keywordtype}{void}\ setDistance(\textcolor{keywordtype}{double}\ distance);}
+\DoxyCodeLine{00063\ }
+\DoxyCodeLine{00064\ \ \ \ \ vector<pair<Airport\ *,\ Airline\ *>>\ getScales()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00065\ }
+\DoxyCodeLine{00066\ \ \ \ \ \textcolor{keywordtype}{void}\ setScales(vector<pair<Airport\ *,\ Airline\ *>>\ scales);}
+\DoxyCodeLine{00067\ }
+\DoxyCodeLine{00068\ \ \ \ \ \textcolor{keywordtype}{void}\ setFlights(\textcolor{keyword}{const}\ vector<Flight>\ \&flights);}
+\DoxyCodeLine{00069\ }
+\DoxyCodeLine{00070\ \};}
+\DoxyCodeLine{00071\ }
+\DoxyCodeLine{00072\ \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

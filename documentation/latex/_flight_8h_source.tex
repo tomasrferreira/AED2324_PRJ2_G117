@@ -1,0 +1,37 @@
+\doxysection{Flight.\+h}
+\hypertarget{_flight_8h_source}{}\label{_flight_8h_source}\index{/Users/tomasgrf/Desktop/AED2324\_PRJ2\_G117/src/Flight.h@{/Users/tomasgrf/Desktop/AED2324\_PRJ2\_G117/src/Flight.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ FLIGHT\_H}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ FLIGHT\_H}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ "{}Airport.h"{}}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ "{}Airline.h"{}}}
+\DoxyCodeLine{00006\ }
+\DoxyCodeLine{00007\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_airport}{Airport}};}
+\DoxyCodeLine{00008\ }
+\DoxyCodeLine{00012\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_flight}{Flight}}\ \{}
+\DoxyCodeLine{00013\ \ \ \ \ \mbox{\hyperlink{class_airport}{Airport}}\ *destination;\ \textcolor{comment}{//\ destination\ node}}
+\DoxyCodeLine{00014\ \ \ \ \ \mbox{\hyperlink{class_airline}{Airline}}\ *airline;}
+\DoxyCodeLine{00015\ \ \ \ \ \textcolor{keywordtype}{double}\ distance\{\};}
+\DoxyCodeLine{00016\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00017\ \ \ \ \ \mbox{\hyperlink{class_flight}{Flight}}()\ =\ \textcolor{keywordflow}{default};}
+\DoxyCodeLine{00018\ }
+\DoxyCodeLine{00019\ \ \ \ \ \mbox{\hyperlink{class_flight}{Flight}}(\mbox{\hyperlink{class_airport}{Airport}}\ *destination,\ \mbox{\hyperlink{class_airline}{Airline}}\ *airline);}
+\DoxyCodeLine{00020\ }
+\DoxyCodeLine{00021\ \ \ \ \ \mbox{\hyperlink{class_airport}{Airport}}\ *getDestination()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00022\ }
+\DoxyCodeLine{00023\ \ \ \ \ \textcolor{keywordtype}{void}\ setDestination(\mbox{\hyperlink{class_airport}{Airport}}\ *destination);}
+\DoxyCodeLine{00024\ }
+\DoxyCodeLine{00025\ \ \ \ \ \mbox{\hyperlink{class_airline}{Airline}}\ *getAirline()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00026\ }
+\DoxyCodeLine{00027\ \ \ \ \ \textcolor{keywordtype}{void}\ setAirline(\mbox{\hyperlink{class_airline}{Airline}}\ *airline);}
+\DoxyCodeLine{00028\ }
+\DoxyCodeLine{00029\ \ \ \ \ \textcolor{keywordtype}{double}\ getDistance()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00030\ }
+\DoxyCodeLine{00031\ \ \ \ \ \textcolor{keywordtype}{void}\ setDistance(\textcolor{keywordtype}{double}\ distance);}
+\DoxyCodeLine{00032\ \};}
+\DoxyCodeLine{00033\ }
+\DoxyCodeLine{00034\ \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

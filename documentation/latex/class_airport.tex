@@ -1,0 +1,84 @@
+\doxysection{Airport Class Reference}
+\hypertarget{class_airport}{}\label{class_airport}\index{Airport@{Airport}}
+
+
+{\ttfamily \#include $<$Airport.\+h$>$}
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_airport_adc3b6f67a17d857fa788769b8182c950}\label{class_airport_adc3b6f67a17d857fa788769b8182c950} 
+{\bfseries Airport} (string code, string name, string city, string country, double latitude, double longitude, bool visited)
+\item 
+\Hypertarget{class_airport_ac57fb7c9d54ee8fe0b4ea904d854b784}\label{class_airport_ac57fb7c9d54ee8fe0b4ea904d854b784} 
+const string \& {\bfseries get\+Code} () const
+\item 
+\Hypertarget{class_airport_a4426141eb370616953e4ce74d4950337}\label{class_airport_a4426141eb370616953e4ce74d4950337} 
+const string \& {\bfseries get\+Name} () const
+\item 
+\Hypertarget{class_airport_aa0dcc380c22912729b765915fc702964}\label{class_airport_aa0dcc380c22912729b765915fc702964} 
+const string \& {\bfseries get\+City} () const
+\item 
+\Hypertarget{class_airport_afbce60f4a1d107fa13bb8d766dc223b2}\label{class_airport_afbce60f4a1d107fa13bb8d766dc223b2} 
+const string \& {\bfseries get\+Country} () const
+\item 
+\Hypertarget{class_airport_aed71ba4592b2a1401eb182931f2d3f06}\label{class_airport_aed71ba4592b2a1401eb182931f2d3f06} 
+double {\bfseries get\+Latitude} () const
+\item 
+\Hypertarget{class_airport_ad8cd931389b14d63e5933a1658b653a3}\label{class_airport_ad8cd931389b14d63e5933a1658b653a3} 
+double {\bfseries get\+Longitude} () const
+\item 
+\Hypertarget{class_airport_a4c7308fbe111c994d1148e6394155df7}\label{class_airport_a4c7308fbe111c994d1148e6394155df7} 
+vector$<$ \mbox{\hyperlink{class_flight}{Flight}} $>$ {\bfseries get\+Flights} () const
+\item 
+\Hypertarget{class_airport_a4fc221377084af7a5068d98340a52166}\label{class_airport_a4fc221377084af7a5068d98340a52166} 
+void {\bfseries set\+Code} (const string \&code)
+\item 
+\Hypertarget{class_airport_aa4049c8dce86a1034cb2a0f5f59adca6}\label{class_airport_aa4049c8dce86a1034cb2a0f5f59adca6} 
+void {\bfseries set\+Name} (const string \&name)
+\item 
+\Hypertarget{class_airport_a285dcb51bcb290244ae69e2d9c357b12}\label{class_airport_a285dcb51bcb290244ae69e2d9c357b12} 
+void {\bfseries set\+City} (const string \&city)
+\item 
+\Hypertarget{class_airport_a3292f90cba7752af222cfeb2c815e3fc}\label{class_airport_a3292f90cba7752af222cfeb2c815e3fc} 
+void {\bfseries set\+Country} (const string \&country)
+\item 
+\Hypertarget{class_airport_aa6fa7f50efbc47c1013af7d7d3ce1a95}\label{class_airport_aa6fa7f50efbc47c1013af7d7d3ce1a95} 
+void {\bfseries set\+Latitude} (double latitude)
+\item 
+\Hypertarget{class_airport_a8595da4216165ea42ad2157480573548}\label{class_airport_a8595da4216165ea42ad2157480573548} 
+void {\bfseries set\+Longitude} (double longitude)
+\item 
+\Hypertarget{class_airport_aa851de6a1ef695319b45ac9a360ca8e3}\label{class_airport_aa851de6a1ef695319b45ac9a360ca8e3} 
+void {\bfseries add\+Flight} (\mbox{\hyperlink{class_airport}{Airport}} \texorpdfstring{$\ast$}{*}destination, \mbox{\hyperlink{class_airline}{Airline}} \texorpdfstring{$\ast$}{*}airline)
+\item 
+\Hypertarget{class_airport_ae0c8e702145d72ca69af5d51c7d8b7a4}\label{class_airport_ae0c8e702145d72ca69af5d51c7d8b7a4} 
+bool {\bfseries is\+Visited} () const
+\item 
+\Hypertarget{class_airport_a98de3c7e56040342cb7369d685eb6fde}\label{class_airport_a98de3c7e56040342cb7369d685eb6fde} 
+void {\bfseries set\+Visited} (bool visited)
+\item 
+\Hypertarget{class_airport_ae54a98be4700b88325ce7ded4b8a2f3b}\label{class_airport_ae54a98be4700b88325ce7ded4b8a2f3b} 
+double {\bfseries get\+Distance} () const
+\item 
+\Hypertarget{class_airport_a2dd0f83d8bccfd24f7503b0d7abd16ed}\label{class_airport_a2dd0f83d8bccfd24f7503b0d7abd16ed} 
+void {\bfseries set\+Distance} (double distance)
+\item 
+\Hypertarget{class_airport_aa6e5fe01acbfe2b0d4a3dace0348bab3}\label{class_airport_aa6e5fe01acbfe2b0d4a3dace0348bab3} 
+vector$<$ pair$<$ \mbox{\hyperlink{class_airport}{Airport}} \texorpdfstring{$\ast$}{*}, \mbox{\hyperlink{class_airline}{Airline}} \texorpdfstring{$\ast$}{*} $>$ $>$ {\bfseries get\+Scales} () const
+\item 
+\Hypertarget{class_airport_adfe31df572c20bf4b08ed6e5e840ca4a}\label{class_airport_adfe31df572c20bf4b08ed6e5e840ca4a} 
+void {\bfseries set\+Scales} (vector$<$ pair$<$ \mbox{\hyperlink{class_airport}{Airport}} \texorpdfstring{$\ast$}{*}, \mbox{\hyperlink{class_airline}{Airline}} \texorpdfstring{$\ast$}{*} $>$ $>$ scales)
+\item 
+\Hypertarget{class_airport_a61adf296e3d2a3c39cda1a6d6fdc5716}\label{class_airport_a61adf296e3d2a3c39cda1a6d6fdc5716} 
+void {\bfseries set\+Flights} (const vector$<$ \mbox{\hyperlink{class_flight}{Flight}} $>$ \&flights)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Class that represents the airports (a node in the graph) 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/tomasgrf/\+Desktop/\+AED2324\+\_\+\+PRJ2\+\_\+\+G117/src/Airport.\+h\item 
+/\+Users/tomasgrf/\+Desktop/\+AED2324\+\_\+\+PRJ2\+\_\+\+G117/src/Airport.\+cpp\end{DoxyCompactItemize}

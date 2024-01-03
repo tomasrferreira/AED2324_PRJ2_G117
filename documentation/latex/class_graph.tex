@@ -1,0 +1,163 @@
+\doxysection{Graph Class Reference}
+\hypertarget{class_graph}{}\label{class_graph}\index{Graph@{Graph}}
+
+
+{\ttfamily \#include $<$Graph.\+h$>$}
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_graph_a8519b4158f11701a4708b22e24fb1e6f}{read\+Files}} (const std\+::string \&file1, const std\+::string \&file2, const std\+::string \&file3)
+\item 
+\mbox{\hyperlink{class_airport}{Airport}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_graph_a7d56f44a57add19b255468929966af42}{best\+Travel}} (\mbox{\hyperlink{class_airport}{Airport}} \texorpdfstring{$\ast$}{*}origin, \mbox{\hyperlink{class_airport}{Airport}} \texorpdfstring{$\ast$}{*}destination)
+\item 
+void \mbox{\hyperlink{class_graph_aa1df4b2b3965d2e2d867cd6d43a4f449}{best\+Travel\+Airport}} (\mbox{\hyperlink{class_airport}{Airport}} \texorpdfstring{$\ast$}{*}origin, \mbox{\hyperlink{class_airport}{Airport}} \texorpdfstring{$\ast$}{*}destination)
+\item 
+void \mbox{\hyperlink{class_graph_abadb28c595b9717bf2552d997979fb5c}{best\+Travel\+City}} (const string \&origin, const string \&destination)
+\item 
+\Hypertarget{class_graph_a77edf6dafe11e47c6195b0f5f59b701a}\label{class_graph_a77edf6dafe11e47c6195b0f5f59b701a} 
+unordered\+\_\+map$<$ string, \mbox{\hyperlink{class_airport}{Airport}} \texorpdfstring{$\ast$}{*} $>$ {\bfseries get\+Airports} ()
+\item 
+int \mbox{\hyperlink{class_graph_af20733462e6b6c3cb16e8e5268f6faff}{get\+Number\+Of\+Flights\+For\+Airport}} (const string \&airport\+Code)
+\item 
+int \mbox{\hyperlink{class_graph_a50fcb7ff1f54d0b59acc556850b4e588}{get\+Number\+Of\+Airlines\+Airport}} (const string \&airport\+Code)
+\item 
+void \mbox{\hyperlink{class_graph_aecf2385e8c33d89049cce4178ccfea6d}{list\+Airlines}} (const string \&airport\+Code)
+\item 
+void \mbox{\hyperlink{class_graph_af39c767595b1de7da8d9c42ede08f89b}{list\+Flights}} (const string \&airport\+Code)
+\item 
+int \mbox{\hyperlink{class_graph_a35a8da716376b369ff9750210200f249}{get\+Number\+Of\+Reachable\+Cities}} (const string \&airport\+Code)
+\item 
+int \mbox{\hyperlink{class_graph_ae7f33986ffcc4111c7c7d9e8381f2f12}{get\+Number\+Of\+Reachable\+Countries}} (const string \&airport\+Code)
+\item 
+\mbox{\hyperlink{class_airport}{Airport}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_graph_acade1281049de2ae61a1c4de9c80cfc3}{airline\+Best\+Travel}} (\mbox{\hyperlink{class_airport}{Airport}} \texorpdfstring{$\ast$}{*}origin, \mbox{\hyperlink{class_airport}{Airport}} \texorpdfstring{$\ast$}{*}destination, const string \&airline\+Code)
+\item 
+void \mbox{\hyperlink{class_graph_a1dc43f03eaf8875df9a17147eada3d29}{one\+Airline\+Best\+Travel}} (\mbox{\hyperlink{class_airport}{Airport}} \texorpdfstring{$\ast$}{*}origin, \mbox{\hyperlink{class_airport}{Airport}} \texorpdfstring{$\ast$}{*}destination, const string \&airline\+Code)
+\item 
+\mbox{\hyperlink{class_airport}{Airport}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_graph_a87e6b65a990f001fe9c4dd42e6efce39}{multiple\+Airline\+Best\+Travel}} (\mbox{\hyperlink{class_airport}{Airport}} \texorpdfstring{$\ast$}{*}origin, \mbox{\hyperlink{class_airport}{Airport}} \texorpdfstring{$\ast$}{*}destination, const vector$<$ string $>$ \&airline\+Codes)
+\item 
+void \mbox{\hyperlink{class_graph_a009178826e0f90c902569d5a91737225}{multiple\+Airlines\+Print}} (\mbox{\hyperlink{class_airport}{Airport}} \texorpdfstring{$\ast$}{*}origin, \mbox{\hyperlink{class_airport}{Airport}} \texorpdfstring{$\ast$}{*}destination, const vector$<$ string $>$ \&airline\+Codes)
+\item 
+int \mbox{\hyperlink{class_graph_afb97430a4a792f72fcf2b294f4934514}{multiple\+Flights\+Reachable\+Cities}} (const string \&airport\+Code, int num\+Flights)
+\item 
+int \mbox{\hyperlink{class_graph_ac45136fcc420460a2a0d06c40e11a0ea}{multiple\+Flights\+Reachable\+Countries}} (const string \&airport\+Code, int num\+Flights)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static double \mbox{\hyperlink{class_graph_ac25c8e7a780765dda6521858534ef003}{calculate\+Distance}} (\mbox{\hyperlink{class_airport}{Airport}} \texorpdfstring{$\ast$}{*}a1, \mbox{\hyperlink{class_airport}{Airport}} \texorpdfstring{$\ast$}{*}a2)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Class that represents the main graph 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_graph_acade1281049de2ae61a1c4de9c80cfc3}\label{class_graph_acade1281049de2ae61a1c4de9c80cfc3} 
+\index{Graph@{Graph}!airlineBestTravel@{airlineBestTravel}}
+\index{airlineBestTravel@{airlineBestTravel}!Graph@{Graph}}
+\doxysubsubsection{\texorpdfstring{airlineBestTravel()}{airlineBestTravel()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_airport}{Airport}} \texorpdfstring{$\ast$}{*} Graph\+::airline\+Best\+Travel (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_airport}{Airport}} \texorpdfstring{$\ast$}{*}}]{origin,  }\item[{\mbox{\hyperlink{class_airport}{Airport}} \texorpdfstring{$\ast$}{*}}]{destination,  }\item[{const string \&}]{airline\+Code }\end{DoxyParamCaption})}
+
+Function that implements the BFS algorithm to search the destination airport using just one airline Time complexity\+: O(\texorpdfstring{$\vert$}{|}\+V\texorpdfstring{$\vert$}{|} + \texorpdfstring{$\vert$}{|}\+E\texorpdfstring{$\vert$}{|}), \texorpdfstring{$\vert$}{|}\+V\texorpdfstring{$\vert$}{|} -\/ number of vertices in the graph (airports), \texorpdfstring{$\vert$}{|}\+E\texorpdfstring{$\vert$}{|} -\/ number of edges in the graph (flights) \Hypertarget{class_graph_a7d56f44a57add19b255468929966af42}\label{class_graph_a7d56f44a57add19b255468929966af42} 
+\index{Graph@{Graph}!bestTravel@{bestTravel}}
+\index{bestTravel@{bestTravel}!Graph@{Graph}}
+\doxysubsubsection{\texorpdfstring{bestTravel()}{bestTravel()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_airport}{Airport}} \texorpdfstring{$\ast$}{*} Graph\+::best\+Travel (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_airport}{Airport}} \texorpdfstring{$\ast$}{*}}]{origin,  }\item[{\mbox{\hyperlink{class_airport}{Airport}} \texorpdfstring{$\ast$}{*}}]{destination }\end{DoxyParamCaption})}
+
+Function that implements the BFS algorithm to search the destination airport Time complexity\+: O(\texorpdfstring{$\vert$}{|}\+V\texorpdfstring{$\vert$}{|} + \texorpdfstring{$\vert$}{|}\+E\texorpdfstring{$\vert$}{|}), \texorpdfstring{$\vert$}{|}\+V\texorpdfstring{$\vert$}{|} -\/ number of vertices in the graph (airports), \texorpdfstring{$\vert$}{|}\+E\texorpdfstring{$\vert$}{|} -\/ number of edges in the graph (flights) \Hypertarget{class_graph_aa1df4b2b3965d2e2d867cd6d43a4f449}\label{class_graph_aa1df4b2b3965d2e2d867cd6d43a4f449} 
+\index{Graph@{Graph}!bestTravelAirport@{bestTravelAirport}}
+\index{bestTravelAirport@{bestTravelAirport}!Graph@{Graph}}
+\doxysubsubsection{\texorpdfstring{bestTravelAirport()}{bestTravelAirport()}}
+{\footnotesize\ttfamily void Graph\+::best\+Travel\+Airport (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_airport}{Airport}} \texorpdfstring{$\ast$}{*}}]{origin,  }\item[{\mbox{\hyperlink{class_airport}{Airport}} \texorpdfstring{$\ast$}{*}}]{destination }\end{DoxyParamCaption})}
+
+Function that calls the best\+Travel function and searches the destination airport Prints best flight Time complexity\+: O(\texorpdfstring{$\vert$}{|}\+V\texorpdfstring{$\vert$}{|} + \texorpdfstring{$\vert$}{|}\+E\texorpdfstring{$\vert$}{|}), \texorpdfstring{$\vert$}{|}\+V\texorpdfstring{$\vert$}{|} -\/ number of vertices in the graph (airports), \texorpdfstring{$\vert$}{|}\+E\texorpdfstring{$\vert$}{|} -\/ number of edges in the graph (flights) \Hypertarget{class_graph_abadb28c595b9717bf2552d997979fb5c}\label{class_graph_abadb28c595b9717bf2552d997979fb5c} 
+\index{Graph@{Graph}!bestTravelCity@{bestTravelCity}}
+\index{bestTravelCity@{bestTravelCity}!Graph@{Graph}}
+\doxysubsubsection{\texorpdfstring{bestTravelCity()}{bestTravelCity()}}
+{\footnotesize\ttfamily void Graph\+::best\+Travel\+City (\begin{DoxyParamCaption}\item[{const string \&}]{origin,  }\item[{const string \&}]{destination }\end{DoxyParamCaption})}
+
+Function that calls the best\+Travel function and searches the destination city Prints the best flight options Time complexity\+: O(n\texorpdfstring{$^\wedge$}{\string^}2) \Hypertarget{class_graph_ac25c8e7a780765dda6521858534ef003}\label{class_graph_ac25c8e7a780765dda6521858534ef003} 
+\index{Graph@{Graph}!calculateDistance@{calculateDistance}}
+\index{calculateDistance@{calculateDistance}!Graph@{Graph}}
+\doxysubsubsection{\texorpdfstring{calculateDistance()}{calculateDistance()}}
+{\footnotesize\ttfamily double Graph\+::calculate\+Distance (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_airport}{Airport}} \texorpdfstring{$\ast$}{*}}]{a1,  }\item[{\mbox{\hyperlink{class_airport}{Airport}} \texorpdfstring{$\ast$}{*}}]{a2 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Function that calculates the distance between two airports in km It is used for the bfs search between airports Time complexity\+: O(1) \Hypertarget{class_graph_a50fcb7ff1f54d0b59acc556850b4e588}\label{class_graph_a50fcb7ff1f54d0b59acc556850b4e588} 
+\index{Graph@{Graph}!getNumberOfAirlinesAirport@{getNumberOfAirlinesAirport}}
+\index{getNumberOfAirlinesAirport@{getNumberOfAirlinesAirport}!Graph@{Graph}}
+\doxysubsubsection{\texorpdfstring{getNumberOfAirlinesAirport()}{getNumberOfAirlinesAirport()}}
+{\footnotesize\ttfamily int Graph\+::get\+Number\+Of\+Airlines\+Airport (\begin{DoxyParamCaption}\item[{const string \&}]{airport\+Code }\end{DoxyParamCaption})}
+
+Function that returns the number of airlines that have planes that depart from the specified airport Time complexity\+: O(n) \Hypertarget{class_graph_af20733462e6b6c3cb16e8e5268f6faff}\label{class_graph_af20733462e6b6c3cb16e8e5268f6faff} 
+\index{Graph@{Graph}!getNumberOfFlightsForAirport@{getNumberOfFlightsForAirport}}
+\index{getNumberOfFlightsForAirport@{getNumberOfFlightsForAirport}!Graph@{Graph}}
+\doxysubsubsection{\texorpdfstring{getNumberOfFlightsForAirport()}{getNumberOfFlightsForAirport()}}
+{\footnotesize\ttfamily int Graph\+::get\+Number\+Of\+Flights\+For\+Airport (\begin{DoxyParamCaption}\item[{const string \&}]{airport\+Code }\end{DoxyParamCaption})}
+
+Function that returns the number of flights that depart from the specified airport Time complexity\+: O(1) \Hypertarget{class_graph_a35a8da716376b369ff9750210200f249}\label{class_graph_a35a8da716376b369ff9750210200f249} 
+\index{Graph@{Graph}!getNumberOfReachableCities@{getNumberOfReachableCities}}
+\index{getNumberOfReachableCities@{getNumberOfReachableCities}!Graph@{Graph}}
+\doxysubsubsection{\texorpdfstring{getNumberOfReachableCities()}{getNumberOfReachableCities()}}
+{\footnotesize\ttfamily int Graph\+::get\+Number\+Of\+Reachable\+Cities (\begin{DoxyParamCaption}\item[{const string \&}]{airport\+Code }\end{DoxyParamCaption})}
+
+Function that returns the number of the reachable cities from the specified airport using just one flight Time complexity\+: O(n) \Hypertarget{class_graph_ae7f33986ffcc4111c7c7d9e8381f2f12}\label{class_graph_ae7f33986ffcc4111c7c7d9e8381f2f12} 
+\index{Graph@{Graph}!getNumberOfReachableCountries@{getNumberOfReachableCountries}}
+\index{getNumberOfReachableCountries@{getNumberOfReachableCountries}!Graph@{Graph}}
+\doxysubsubsection{\texorpdfstring{getNumberOfReachableCountries()}{getNumberOfReachableCountries()}}
+{\footnotesize\ttfamily int Graph\+::get\+Number\+Of\+Reachable\+Countries (\begin{DoxyParamCaption}\item[{const string \&}]{airport\+Code }\end{DoxyParamCaption})}
+
+Function that returns the number of the reachable countries from the specified airport using just one flight Time complexity\+: O(n) \Hypertarget{class_graph_aecf2385e8c33d89049cce4178ccfea6d}\label{class_graph_aecf2385e8c33d89049cce4178ccfea6d} 
+\index{Graph@{Graph}!listAirlines@{listAirlines}}
+\index{listAirlines@{listAirlines}!Graph@{Graph}}
+\doxysubsubsection{\texorpdfstring{listAirlines()}{listAirlines()}}
+{\footnotesize\ttfamily void Graph\+::list\+Airlines (\begin{DoxyParamCaption}\item[{const string \&}]{airport\+Code }\end{DoxyParamCaption})}
+
+Function that lists the airlines that have planes that depart from the specified airport Time complexity\+: O(n) \Hypertarget{class_graph_af39c767595b1de7da8d9c42ede08f89b}\label{class_graph_af39c767595b1de7da8d9c42ede08f89b} 
+\index{Graph@{Graph}!listFlights@{listFlights}}
+\index{listFlights@{listFlights}!Graph@{Graph}}
+\doxysubsubsection{\texorpdfstring{listFlights()}{listFlights()}}
+{\footnotesize\ttfamily void Graph\+::list\+Flights (\begin{DoxyParamCaption}\item[{const string \&}]{airport\+Code }\end{DoxyParamCaption})}
+
+Function that lists the flights that depart from the specified airport Time complexity\+: O(n) \Hypertarget{class_graph_a87e6b65a990f001fe9c4dd42e6efce39}\label{class_graph_a87e6b65a990f001fe9c4dd42e6efce39} 
+\index{Graph@{Graph}!multipleAirlineBestTravel@{multipleAirlineBestTravel}}
+\index{multipleAirlineBestTravel@{multipleAirlineBestTravel}!Graph@{Graph}}
+\doxysubsubsection{\texorpdfstring{multipleAirlineBestTravel()}{multipleAirlineBestTravel()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_airport}{Airport}} \texorpdfstring{$\ast$}{*} Graph\+::multiple\+Airline\+Best\+Travel (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_airport}{Airport}} \texorpdfstring{$\ast$}{*}}]{origin,  }\item[{\mbox{\hyperlink{class_airport}{Airport}} \texorpdfstring{$\ast$}{*}}]{destination,  }\item[{const vector$<$ string $>$ \&}]{airline\+Codes }\end{DoxyParamCaption})}
+
+Function that gives the user the best flight using just multiple airlines by his choice, uses BFS Time complexity\+: O(\texorpdfstring{$\vert$}{|}\+V\texorpdfstring{$\vert$}{|} + \texorpdfstring{$\vert$}{|}\+E\texorpdfstring{$\vert$}{|}), \texorpdfstring{$\vert$}{|}\+V\texorpdfstring{$\vert$}{|} -\/ number of vertices in the graph (airports), \texorpdfstring{$\vert$}{|}\+E\texorpdfstring{$\vert$}{|} -\/ number of edges in the graph (flights) \Hypertarget{class_graph_a009178826e0f90c902569d5a91737225}\label{class_graph_a009178826e0f90c902569d5a91737225} 
+\index{Graph@{Graph}!multipleAirlinesPrint@{multipleAirlinesPrint}}
+\index{multipleAirlinesPrint@{multipleAirlinesPrint}!Graph@{Graph}}
+\doxysubsubsection{\texorpdfstring{multipleAirlinesPrint()}{multipleAirlinesPrint()}}
+{\footnotesize\ttfamily void Graph\+::multiple\+Airlines\+Print (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_airport}{Airport}} \texorpdfstring{$\ast$}{*}}]{origin,  }\item[{\mbox{\hyperlink{class_airport}{Airport}} \texorpdfstring{$\ast$}{*}}]{destination,  }\item[{const vector$<$ string $>$ \&}]{airline\+Codes }\end{DoxyParamCaption})}
+
+Function that prints the flight using multiple airlines from function multiple\+Airline\+Best\+Travel Time complexity\+: O(n) \Hypertarget{class_graph_afb97430a4a792f72fcf2b294f4934514}\label{class_graph_afb97430a4a792f72fcf2b294f4934514} 
+\index{Graph@{Graph}!multipleFlightsReachableCities@{multipleFlightsReachableCities}}
+\index{multipleFlightsReachableCities@{multipleFlightsReachableCities}!Graph@{Graph}}
+\doxysubsubsection{\texorpdfstring{multipleFlightsReachableCities()}{multipleFlightsReachableCities()}}
+{\footnotesize\ttfamily int Graph\+::multiple\+Flights\+Reachable\+Cities (\begin{DoxyParamCaption}\item[{const string \&}]{airport\+Code,  }\item[{int}]{num\+Flights }\end{DoxyParamCaption})}
+
+Function that returns the number of the reachable cities from the specified airport using multiple flights Time complexity\+: O(n\texorpdfstring{$^\wedge$}{\string^}2) \Hypertarget{class_graph_ac45136fcc420460a2a0d06c40e11a0ea}\label{class_graph_ac45136fcc420460a2a0d06c40e11a0ea} 
+\index{Graph@{Graph}!multipleFlightsReachableCountries@{multipleFlightsReachableCountries}}
+\index{multipleFlightsReachableCountries@{multipleFlightsReachableCountries}!Graph@{Graph}}
+\doxysubsubsection{\texorpdfstring{multipleFlightsReachableCountries()}{multipleFlightsReachableCountries()}}
+{\footnotesize\ttfamily int Graph\+::multiple\+Flights\+Reachable\+Countries (\begin{DoxyParamCaption}\item[{const string \&}]{airport\+Code,  }\item[{int}]{num\+Flights }\end{DoxyParamCaption})}
+
+Function that returns the number of the reachable countries from the specified airport using multiple flights Time complexity\+: O(n\texorpdfstring{$^\wedge$}{\string^}2) \Hypertarget{class_graph_a1dc43f03eaf8875df9a17147eada3d29}\label{class_graph_a1dc43f03eaf8875df9a17147eada3d29} 
+\index{Graph@{Graph}!oneAirlineBestTravel@{oneAirlineBestTravel}}
+\index{oneAirlineBestTravel@{oneAirlineBestTravel}!Graph@{Graph}}
+\doxysubsubsection{\texorpdfstring{oneAirlineBestTravel()}{oneAirlineBestTravel()}}
+{\footnotesize\ttfamily void Graph\+::one\+Airline\+Best\+Travel (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_airport}{Airport}} \texorpdfstring{$\ast$}{*}}]{origin,  }\item[{\mbox{\hyperlink{class_airport}{Airport}} \texorpdfstring{$\ast$}{*}}]{destination,  }\item[{const string \&}]{airline\+Code }\end{DoxyParamCaption})}
+
+Function that gives the user the best flight using just one airline Time complexity\+: O(n) \Hypertarget{class_graph_a8519b4158f11701a4708b22e24fb1e6f}\label{class_graph_a8519b4158f11701a4708b22e24fb1e6f} 
+\index{Graph@{Graph}!readFiles@{readFiles}}
+\index{readFiles@{readFiles}!Graph@{Graph}}
+\doxysubsubsection{\texorpdfstring{readFiles()}{readFiles()}}
+{\footnotesize\ttfamily void Graph\+::read\+Files (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{file1,  }\item[{const std\+::string \&}]{file2,  }\item[{const std\+::string \&}]{file3 }\end{DoxyParamCaption})}
+
+Function that reads the info from the csv files Time complexity\+: O(n), n -\/ length of csv file 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/tomasgrf/\+Desktop/\+AED2324\+\_\+\+PRJ2\+\_\+\+G117/src/Graph.\+h\item 
+/\+Users/tomasgrf/\+Desktop/\+AED2324\+\_\+\+PRJ2\+\_\+\+G117/src/Graph.\+cpp\end{DoxyCompactItemize}

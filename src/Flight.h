@@ -6,7 +6,7 @@
 
 class Airport;
 
-/*
+/**
  * Class that represents the flights (a edge in the graph)
  */
 class Flight {
